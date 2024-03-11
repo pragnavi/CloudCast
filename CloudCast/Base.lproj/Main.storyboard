@@ -60,16 +60,36 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUP-wu-fC9">
+                                <rect key="frame" x="16.000000000000004" y="334" width="37.333333333333343" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="◀"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="itM-jt-Q5n" eventType="touchUpInside" id="8cN-L4-shY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igu-Sj-uPd">
+                                <rect key="frame" x="339.66666666666669" y="334" width="37.333333333333314" height="34.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="▶"/>
+                                <connections>
+                                    <action selector="didTapForwardButton:" destination="itM-jt-Q5n" eventType="touchUpInside" id="Dkl-Ta-0Hz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cMp-pS-gX1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lqo-yX-6Sk" firstAttribute="top" secondItem="cMp-pS-gX1" secondAttribute="top" constant="20" id="FrC-81-Jf8"/>
+                            <constraint firstItem="cMp-pS-gX1" firstAttribute="trailing" secondItem="Igu-Sj-uPd" secondAttribute="trailing" constant="16" id="MlS-08-xyX"/>
                             <constraint firstItem="YqO-YO-pl8" firstAttribute="top" secondItem="paf-Ci-dIs" secondAttribute="bottom" constant="75" id="XzU-Ed-xvK"/>
                             <constraint firstItem="YqO-YO-pl8" firstAttribute="centerX" secondItem="aKj-JT-mwC" secondAttribute="centerX" id="Yyv-fu-hxp"/>
+                            <constraint firstItem="vUP-wu-fC9" firstAttribute="centerY" secondItem="aKj-JT-mwC" secondAttribute="centerY" constant="-75" id="aPv-da-DKW"/>
                             <constraint firstItem="paf-Ci-dIs" firstAttribute="leading" secondItem="Lqo-yX-6Sk" secondAttribute="trailing" constant="2" id="dQn-1d-oqf"/>
+                            <constraint firstItem="Igu-Sj-uPd" firstAttribute="centerY" secondItem="aKj-JT-mwC" secondAttribute="centerY" constant="-75" id="fPN-Qc-iUy"/>
                             <constraint firstItem="paf-Ci-dIs" firstAttribute="top" secondItem="cMp-pS-gX1" secondAttribute="top" constant="20" id="orT-ao-Wf0"/>
                             <constraint firstItem="paf-Ci-dIs" firstAttribute="centerX" secondItem="aKj-JT-mwC" secondAttribute="centerX" id="p2x-w8-ZiM"/>
+                            <constraint firstItem="vUP-wu-fC9" firstAttribute="leading" secondItem="cMp-pS-gX1" secondAttribute="leading" constant="16" id="qK9-A9-TWx"/>
                         </constraints>
                     </view>
                     <connections>
