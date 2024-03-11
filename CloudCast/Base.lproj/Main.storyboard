@@ -30,11 +30,43 @@
                                     <constraint firstAttribute="width" constant="30" id="gOf-F9-JLv"/>
                                 </constraints>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="YqO-YO-pl8">
+                                <rect key="frame" x="109" y="188.66666666666663" width="175" height="344"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="March 11, 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYA-Pq-RY3">
+                                        <rect key="frame" x="29.666666666666657" y="0.0" width="116" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-drizzle-lightning-moon" translatesAutoresizingMaskIntoConstraints="NO" id="nJ0-7A-YbF">
+                                        <rect key="frame" x="0.0" y="56.333333333333343" width="175" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="K8B-g8-NMf"/>
+                                            <constraint firstAttribute="height" constant="175" id="Yfu-YI-bTB"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Rain with Lightning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-TI-QyL">
+                                        <rect key="frame" x="15.333333333333329" y="267.33333333333337" width="144.33333333333337" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="32°F" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctf-kI-1qQ">
+                                        <rect key="frame" x="69" y="323.66666666666674" width="37" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cMp-pS-gX1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lqo-yX-6Sk" firstAttribute="top" secondItem="cMp-pS-gX1" secondAttribute="top" constant="20" id="FrC-81-Jf8"/>
+                            <constraint firstItem="YqO-YO-pl8" firstAttribute="top" secondItem="paf-Ci-dIs" secondAttribute="bottom" constant="75" id="XzU-Ed-xvK"/>
+                            <constraint firstItem="YqO-YO-pl8" firstAttribute="centerX" secondItem="aKj-JT-mwC" secondAttribute="centerX" id="Yyv-fu-hxp"/>
                             <constraint firstItem="paf-Ci-dIs" firstAttribute="leading" secondItem="Lqo-yX-6Sk" secondAttribute="trailing" constant="2" id="dQn-1d-oqf"/>
                             <constraint firstItem="paf-Ci-dIs" firstAttribute="top" secondItem="cMp-pS-gX1" secondAttribute="top" constant="20" id="orT-ao-Wf0"/>
                             <constraint firstItem="paf-Ci-dIs" firstAttribute="centerX" secondItem="aKj-JT-mwC" secondAttribute="centerX" id="p2x-w8-ZiM"/>
@@ -47,6 +79,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="cloud-drizzle-lightning-moon" width="91" height="91"/>
         <image name="place-marker" width="64" height="64"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
